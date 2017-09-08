@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.img_o{
+    position: relative;
+    overflow: hidden;
+    width: 180px;
+    height: 240px;
+}
+
+.img_o::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background: url("http://mhfm5tel.cdndm5.com/11/10684/20170717171838_180x240_28.jpg") no-repeat;
+
+    filter: blur(20px);
+    
+}
+
+.box{
+    display: flex;
+}
+
+.box>li{
+    padding: 10px 20px;
+    
+
+    background: 
+    linear-gradient(-135deg,transparent 19px, #F07F11 0) top right,
+    linear-gradient(-45deg,transparent 19px, #F07F11 0) bottom right
+    ;
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+}
